@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div style="max-width: 540px; margin-left: 20px; margin-top: 20px;">
+        <form action="#" method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" name="name" />
+            </div>
+
+            <div class="form-group">
+                <label for="start">Start time</label>
+                <div class='input-group date' value="2020-03-20 14:00" id='datetimepicker1'>
+                        <input type='text' class="form-control" name="start" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="end">End time</label>
+                <div class='input-group date' value="2020-03-20 14:00" id='datetimepicker2'>
+                        <input type='text' class="form-control" name="end" />
+                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                </div>
+            </div>
+            <button class="btn btn-lg" type="submit">Submit</button>
+        </form>
+</div>
+{% endblock %}}
