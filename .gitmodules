@@ -1,0 +1,3 @@
+[submodule "dw-1d"]
+	path = dw-1d
+	url = https://github.com/noodnood/dw-1d.git
